@@ -1,0 +1,60 @@
+body
+{
+    display:flex;
+    padding: 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(white,rgb(169, 169, 217));
+}
+.box1 textarea,[type=text] ,textarea,input[type=number],[type=email]
+{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+
+.cont{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1050px;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 5px 5px 5px rgb(76, 73, 73);
+    border-width: 20px;
+    border: 2px solid black;
+}
+.left{
+    background-color:#FCA678;
+    height: 1050px;
+    width: 500px;
+    
+}
+.right{
+   background-color:whitesmoke;
+    height: 1050px;
+    width: 590px;
+    margin-left: -90px;
+    border-left: 2px solid black;
+    
+}
+#profile{
+    height:200px;
+    width:200px;
+    align-items: center;
+    margin: 1px 10px 10px 1px;
+    border-radius: 100px;
+}
+#document{
+    margin-top: -30px;
+}
+.btn {
+    margin-top: 20px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}  

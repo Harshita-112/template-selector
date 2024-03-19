@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template3</title>
+    <link rel="stylesheet" href="temp3.css">
+    <script src="https://kit.fontawesome.com/c91f908e83.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+        <div class="box2">
+            <div class="box3">
+            <textarea style="color: white;margin-left: 50px;margin-top: 30px;height: 100px;width: 500px;background-color: transparent;border-color:transparent;font-size: 40px;font-weight: bold;">Write name</textarea>
+            <div class="img">
+                <img src="C:\Users\hp\Desktop\CA files Harshita\html files\intern project\images\profile-icon-design-free-vector.jpg" alt="" id="profile">
+                <label for="document" id="dp">select image</label>
+                <input type="file" accept="image/jpeg , image/png , image/jpg" id="document">
+                <br>
+            </div>
+            </div>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Contact <input type="number" placeholder="Phone Number"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Email <input type="email" placeholder=".com"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Linkedin <input type="text" placeholder="Linkedin Profile"></li><br>
+                <hr style="background-color:  white;height: 2px;width: 250px;border-color: white;">
+                <h4 style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;">Skills</h4><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <hr style="background-color: white;height: 2px;width: 250px;border-color: white;">
+                <h4 style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;">Language Known</h4>
+                <textarea style="width:250px;height: 90px;margin-left: 10px ;"></textarea>
+                <hr style="background-color: white;height: 2px;width: 250px;border-color: white;">
+                <h4 style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;">Reference</h4><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Contact <input type="number" placeholder="Phone Number"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:white;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Contact <input type="number" placeholder="Phone Number"></li><br>
+        </div>
+
+        <div class="b1">
+            <h4 style="text-align: center; font-size: 30px;">Professional Summery</h4>
+        </div><br>
+        <textarea style="margin-left: 400px;height: 200px;width: 500px;color: black;font-weight: bold;"></textarea><br>
+        <div class="b2">
+            <h4 style="text-align: center;font-size: 30px;">Experience</h4>
+         </div><br>
+         <textarea style="margin-left: 400px;height: 200px;width: 500px;color: black;font-weight: bold;"></textarea><br>
+
+        <div class="b3">
+            <h4 style="text-align: center;font-size: 30px;">Educational Qualification</h4>
+        </div><br>
+        <textarea style="margin-left: 400px;height: 200px;width: 500px;color: black;font-weight: bold;"></textarea><br>
+    </div>
+</div>
+
+<div class="c">  
+    <button class="btn" onclick="download_pdf()">Download PDF</button>
+    </div>
+
+ <script>
+    let profilepic=document.getElementById("profile");
+    let inputfile=document.getElementById("document");
+    inputfile.onchange=function(){
+       profilepic.src=URL.createObjectURL(inputfile.files[0]);
+    }
+    
+    function download_pdf(){
+       const pdf=document.getElementById(".box");
+       html2pdf().from(pdf).save();
+    }
+ </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template2</title>
+    <style>
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c91f908e83.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="temp2.css">
+</head>
+<body style="background-color: cornsilk;">
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <img src="C:\Users\hp\Desktop\CA files Harshita\html files\intern project\images\profile-icon-design-free-vector.jpg" alt="" id="profile">
+                <label for="document" id="dp">select image</label>
+                <input type="file" accept="image/jpeg , image/png , image/jpg" id="document">
+            </div><br>
+            <textarea>Write your name</textarea>
+            <div class="p1">
+                <h2>About Me</h2>
+            </div>
+                <textarea style="background-color: transparent;border: transparent;height: 200px;width: 300px; font-weight: bold;color: white;font-size: smaller;"></textarea>
+            <div class="p2">
+                <h2>Education</h2>
+            </div>
+            <textarea style="background-color: transparent;border: transparent;height: 200px;width: 300px; font-weight: bold;color: white;font-size: smaller;"></textarea>
+
+            <div class="p3">
+                <h2>Contact</h2>
+            </div>
+            <li style="margin-left: 20px; color:whitesmoke;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Phone No:<input type="number" placeholder="Phone Number"></li><br>
+            <li style="margin-left: 20px; color:whitesmoke;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Email No:<input type="email" placeholder="Phone Number"></li><br>
+            <li style="margin-left: 20px; color:whitesmoke;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Linkedin:<input type="text" placeholder="Phone Number"></li><br>
+    </div>
+    <div class="right">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+</div>
+        <h4 style="color: rgb(1, 97, 97); font-weight: bold;font-size: 40px; margin-left: 500px; margin-top: 80px;text-align: left;">Experience</h4>
+        <textarea style="width:400px;height:200px; font-family: Georgia, 'Times New Roman', Times, serif; color: black;margin-left: 500px;font-size: 15px;text-align: left;"></textarea>
+        <h4 style="color: rgb(1, 97, 97); font-weight: bold;font-size: 40px; margin-left: 500px; margin-top: 80px;">Skills</h4>
+        <li><input type="text"></li>
+        <li><input type="text"></li>
+        <li><input type="text"></li>
+        <li><input type="text"></li>
+        <h4 style="color: rgb(1, 97, 97); font-weight: bold;font-size:40px; margin-left: 500px; margin-top: 80px;text-align: left;">Language Known</h4>
+        <textarea style="width:400px;height:100px; font-family: Georgia, 'Times New Roman', Times, serif; color: black;margin-left: 500px; font-size: 15px;text-align: left;"></textarea>
+        <h4 style="color: rgb(1, 97, 97); font-weight: bold;font-size:40px; margin-left: 500px; margin-top: 80px;text-align: left;">Reference</h4>
+        <li><input type="text" placeholder="text">&emsp;<input type="number" placeholder="number">
+        <li><input type="text" placeholder="text">&emsp;<input type="number" placeholder="number"></li>
+    </div>
+
+    <div class="c">  
+        <button class="btn" onclick="download_pdf()">Download PDF</button>
+        </div>
+  
+     <script>
+        let profilepic=document.getElementById("profile");
+        let inputfile=document.getElementById("document");
+        inputfile.onchange=function(){
+           profilepic.src=URL.createObjectURL(inputfile.files[0]);
+        }
+        
+        function download_pdf(){
+           const pdf=document.getElementById(".container");
+           html2pdf().from(pdf).save();
+        }
+     </script>
+</body>
+</html>

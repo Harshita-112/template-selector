@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .box {
+        background-color: #a1c8b3;
+        height: 200px;
+        width: 1000px;
+        position: absolute;
+    }
+    .box1 {
+        width: 300px;
+        height: 980px;
+        background-color: #E7D9DC;
+        opacity: 1.0;
+        position: absolute;
+        margin: -150px 50px 50px 50px;
+        box-shadow: 2px 2px rgb(78, 35, 49);
+        border: 2px solid rgb(7, 6, 53);
+        border-radius: 16px;
+    }
+    .box2 {
+        margin: 30px 10px 20px 50px;
+        width: 200px;
+        height: 200px;
+        background-color: aliceblue;
+        border-radius: 100px;
+        box-shadow: 2px 5px rgb(30, 30, 49);
+        border: 3px solid navy;
+    }
+    </style>
+    <link rel="stylesheet" href="temp1.css">
+    <script src="https://kit.fontawesome.com/c91f908e83.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            <textarea style="color: aliceblue;margin-left: 500px;margin-top: 30px;height: 130px;width: 400px;background-color: transparent;border-color: transparent;font-size: 40px;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: bold;"></textarea>
+            <hr style="background-color: whitesmoke;height: 2px;width: 250px;border-color: whitesmoke;margin-right: 60px;">
+            <div class="box1">
+                <div class="box2">
+                    <img src="C:\Users\hp\Desktop\CA files Harshita\html files\intern project\images\profile-icon-design-free-vector.jpg" alt="" id="profile">
+                    <label for="document" id="dp">select image</label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="document">
+                </div><br><br>
+                
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Contact <input type="number" placeholder="Phone Number"></li><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Email <input type="email" placeholder=".com"></li><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Linkedin <input type="text" placeholder="Linkedin Profile"></li><br>
+                <hr style="background-color: navy;height: 2px;width: 250px;border-color: navy;">
+                <h4 style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;">Skills</h4><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li><br>
+                <hr style="background-color: navy;height: 2px;width: 250px;border-color: navy;">
+                <h4 style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;">Language Known</h4>
+                <textarea style="width:250px;height: 30px;margin-left: 10px;"></textarea>
+                <h4 style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;">Reference</h4><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Contact <input type="number" placeholder="Phone Number"></li><br>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;"><input type="text"></li>
+                <li style="margin-left: 20px; color:rgb(40, 14, 61);font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;">Contact <input type="number" placeholder="Phone Number"></li><br>
+            </div>
+        </div>
+        <div class="left"></div>
+        <div class="right">
+            <div class="prof">
+                <h5 style="color:black;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;font-size:30px;text-align: center;margin-top: 200px;margin-bottom: 10px;">Professional Summary</h5>
+                <hr style="background-color:  navy;height: 2px;width: 250px;border-color: navy;">
+                <textarea style="margin-left:30px; width:500px;height: 100px;font-size: larger;"></textarea>
+                <h5 style="color:black;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;font-size:30px;text-align: center;margin-bottom: 10px;">Experience</h5>
+                <hr style="background-color:  navy;height: 2px;width: 250px;border-color: navy;">
+                <textarea style="margin-left:30px; width:500px;height: 150px;font-size: larger"></textarea>
+                <h5 style="color:black;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;font-size:30px;text-align: center;margin-bottom: 10px;">Educational Qualification</h5>
+                <hr style="background-color:  navy;height: 2px;width: 250px;border-color: navy;">
+                <textarea style="margin-left:30px; width:500px;height: 150px;font-size: larger"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="c">  
+        <button class="btn" onclick="download_pdf()">Download PDF</button>
+    </div>
+
+    <script>
+        let profilepic=document.getElementById("profile");
+        let inputfile=document.getElementById("document");
+        inputfile.onchange=function(){
+            profilepic.src=URL.createObjectURL(inputfile.files[0]);
+        }
+        
+        function download_pdf(){
+            const pdf=document.querySelector(".cont");
+            html2pdf().from(pdf).save();
+        }
+    </script>
+</body>
+</html>

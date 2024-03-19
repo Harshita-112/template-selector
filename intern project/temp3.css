@@ -1,0 +1,85 @@
+body{
+   padding:0px;
+ 
+}
+.box{
+   height: 1250px;
+   width:1000px;
+   margin: 50px 50px 60px 100px;
+   background-color: yellow;
+   position:relative;
+}
+.box1{
+   background-color: rgb(234, 234, 234);
+   height: 1250px;
+   width: 1000px;
+   margin: 0px 0px 0px 0px;
+   position: absolute;
+   border: 3px solid black;
+   box-shadow: 10px 10px 10px gray;
+}
+.box2{
+   height: 1247px;
+   width:350px;
+   background-color: rgb(13, 6, 61);
+   position: absolute;
+}
+.box3{
+   background-color: rgb(56, 187, 227);
+   width: 1000px;
+   height: 160px;
+   margin-top: 50px;
+}
+.img{
+   width: 200px;
+   height: 200px;
+   background-color: azure;
+   margin-left: 700px;
+   margin-top: -160px;
+   border: 6px solid gray;
+   border-radius: 100px;
+}
+.box2 input[type="text"],input[type="number"],input[type="email"],textarea,li{
+
+   background-color: transparent;
+   border-color: transparent;
+   color: azure;
+}
+input[type="email"],input[type="text"]{
+   width: 300px;
+}
+.b1,.b2,.b3{
+   background-color: rgb(18, 18, 72);
+   margin-left: 300px;
+   height:60px;
+   width: 600px;
+   margin-top: 260px;
+   border-radius: 30px;
+   color: aliceblue;
+}
+.b2,.b3{
+   margin-top: 9px;
+}
+#profile{
+   height:180px;
+   width:180px;
+   align-items: center;
+   margin: 1px 10px 10px 1px;
+   border-radius: 100px;
+}
+#document{
+   margin-top: -30px;
+}
+.btn{
+   margin-top: 5px;
+   margin-left: 1000px;
+   height: 50px;
+   background-color:blue;
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bolder;
+}
+
+#dp{
+   margin-top: -50px;
+}
